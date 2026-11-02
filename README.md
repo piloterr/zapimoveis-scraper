@@ -69,7 +69,7 @@ response = requests.get(
     params={
         "query": "https://www.zapimoveis.com.br/imovel/venda-apartamento-3-quartos-mobiliado-jardim-paulista-zona-sul-sao-paulo-sp-170m2-id-2912096343/",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
@@ -302,7 +302,7 @@ response = requests.get(
     params={
         "query": "S\u00e3o Paulo",
     },
-    timeout=60,
+    timeout=120,
 )
 response.raise_for_status()
 data = response.json()
